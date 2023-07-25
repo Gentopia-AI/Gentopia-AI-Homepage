@@ -1,7 +1,10 @@
 # Gentopia-AI-Homepage
 
 
+The homepage of Gentopia-AI, using the customizable Jekyll Portfolio theme [**WhatATheme Here**](https://thedevslot.github.io/WhatATheme/)
 
+
+<!-- 
 # WhatATheme
 
 
@@ -53,7 +56,10 @@
 
 ### Credits :bulb:
 * [Sneha Omer](http://sassyecoder.github.io/)
-* [Harsh Trivedi](http://harsh98trivedi.github.io/)
+* [Harsh Trivedi](http://harsh98trivedi.github.io/) -->
+
+
+
 
 ### License
 The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
