@@ -4,6 +4,11 @@
 The homepage of Gentopia-AI, using the customizable Jekyll Portfolio theme [**WhatATheme Here**](https://thedevslot.github.io/WhatATheme/)
 
 
+```
+$ bundle exec jekyll serve --livereload
+```
+
+
 <!-- 
 # WhatATheme
 

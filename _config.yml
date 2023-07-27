@@ -2,9 +2,13 @@
 markdown: kramdown
 
 # URL of the Site
-url: ''
+domain:  gentopia-ai.github.io
+url: https://gentopia-ai.github.io
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl:
+
+# https://github.com/Gentopia-AI/Gentopia-AI-Homepage.git
+
 
 # Title of the Site
 title: Gentopia-AI
