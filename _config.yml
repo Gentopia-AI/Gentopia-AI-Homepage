@@ -21,7 +21,7 @@ favicon-url:
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 # heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-heroimage: /assets/images/gentopia-ai-homepage.png
+heroimage: https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/gentopia-ai-homepage.png
 
 
 # Social Media and Contact
