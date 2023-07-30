@@ -1,15 +1,22 @@
 # Gentopia-AI-Homepage
 
 
-The homepage of Gentopia-AI, using the customizable Jekyll Portfolio theme [**WhatATheme Here**](https://thedevslot.github.io/WhatATheme/)
+Please check the homepage of [**Gentopia-AI**](https://gentopia-ai.github.io/Gentopia-AI-Homepage/) at: https://gentopia-ai.github.io/Gentopia-AI-Homepage/
 
 
-See the homepage of [**Gentopia-AI**](https://gentopia-ai.github.io/Gentopia-AI-Homepage/) at: https://gentopia-ai.github.io/Gentopia-AI-Homepage/
-
-
+Run the file with:
 ```
 $ bundle exec jekyll serve --livereload
 ```
+
+
+### License
+The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
+
+
+### Reference
+This repo refers to the customizable Jekyll Portfolio theme [**WhatATheme Here**](https://thedevslot.github.io/WhatATheme/)
+
 
 
 <!-- 
@@ -69,5 +76,3 @@ $ bundle exec jekyll serve --livereload
 
 
 
-### License
-The contents of this repository are licensed under the [**GNU General Public License v2.0**](https://github.com/thedevslot/WhatATheme/blob/master/LICENSE)
