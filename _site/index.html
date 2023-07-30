@@ -34,7 +34,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163806439-1"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-163806439-1'); </script>
     <title>Gentopia-AI</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/css/style.css">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/logo.png" type="image/x-icon">
 </head>
@@ -49,15 +49,15 @@
                 <!--<div class="navbar-start"></div>--> <!-- navbar items | right side -->
                 <div class="navbar-end"> 
                         <a class="navbar-item is-active" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#">HOME</a> 
-                        <a class="navbar-item" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#demo">Demos</a> 
-                        <a class="navbar-item" href="https://github.com/Gentopia-AI/Gentopia">Gentopia</a>
-                        <a class="navbar-item" href="https://github.com/Gentopia-AI/GentPool">GentBench</a>
+                        <a class="navbar-item {% if page.layout == 'demo' %}is-active{% endif %}" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#demo">Demos</a> 
+                        <a class="navbar-item" target=”_blank” href="https://github.com/Gentopia-AI/Gentopia">Gentopia</a>
+                        <a class="navbar-item" target=”_blank” href="https://github.com/Gentopia-AI/GentPool">GentBench</a>
                         <!-- <a class="navbar-item" href="https://github.com/Gentopia-AI/GentBench">GentBench</a> -->
-                        <a class="navbar-item" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#about">Team</a> 
+                        <a class="navbar-item {% if page.layout == 'about' %}is-active{% endif %}" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#about">Team</a> 
                         <a class="navbar-item" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog">Blogs</a>
                         <div class="navbar-item has-dropdown is-hoverable"> <a class="navbar-link"> Docs </a>
                             <div class="navbar-dropdown has-background-black is-left">
-                                <a href="https://gentopia.readthedocs.io/en/latest/index.html" class="navbar-item has-text-grey-light "> Gentopia</a> 
+                                <a href="https://gentopia.readthedocs.io/en/latest/index.html" target=”_blank” class="navbar-item has-text-grey-light "> Gentopia</a> 
                                 <!-- <a href="https://github.com/Gentopia-AI/GentPool" class="navbar-item has-text-grey-light ">GentPool</a>
                                 <a href="https://github.com/Gentopia-AI/GentBench" class="navbar-item has-text-grey-light ">GentBench</a> -->
                             </div>
@@ -140,7 +140,6 @@
 
 
 
-
     <section class="hero is-fullheight has-text-centered has-background-white-ter" id="about">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -169,44 +168,8 @@
             </div>
     </section>
 
-<!-- 
-    <section class="hero is-fullheight has-text-centered" id="contact">
-        <div class="hero-body">
-            <div class="container"> <a id="contact-button" href="https://m.me/thedevslot"
-                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                    target="_blank"> <i class="fab fa-facebook-messenger"></i>Ping me on Messenger </a> <a
-                    id="contact-button" href="mailto:thedevslot@gmail.com"
-                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                    target="_blank"> <i class="fas fa-envelope"></i>Send me an Email </a> <a id="contact-button"
-                    href="https://www.twitter.com/intent/tweet?screen_name=thedevslot"
-                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                    target="_blank"> <i class="fab fa-twitter"></i>Tweet me on Twitter </a>
-                <hr>
-                <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless"> You Can find
-                    me here</h3>
-                <div class="column is-full is-size-3"> <a href="http://www.facebook.com/thedevslot" target="_blank"
-                        class="has-text-black"><i class="fab fa-facebook"></i></a> <a
-                        href="https://twitter.com/intent/user?screen_name=thedevslot" target="_blank"
-                        class="has-text-black"><i class="fab fa-twitter"></i></a> <a
-                        href="http://www.instagram.com/thedevslot" target="_blank" class="has-text-black"><i
-                            class="fab fa-instagram"></i></a> <a href="http://www.linkedin.com/in/thedevslot"
-                        target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a> <a
-                        href="http://www.github.com/thedevslot" target="_blank" class="has-text-black"><i
-                            class="fab fa-github"></i></a> <a
-                        href="http://www.youtube.com/channel/UCk_93NXYP-U_AOB5GfWlOow" target="_blank"
-                        class="has-text-black"><i class="fab fa-youtube"></i></a> <a href="http://www.reddit.com/u//"
-                        target="_blank" class="has-text-black"><i class="fab fa-reddit"></i></a> <a
-                        href="http://www.behance.com//" target="_blank" class="has-text-black"><i
-                            class="fab fa-behance"></i></a> <a href="http://www.dribbble.com//" target="_blank"
-                        class="has-text-black"><i class="fab fa-dribbble"></i></a> <a
-                        href="http://open.spotify.com/user//" target="_blank" class="has-text-black"><i
-                            class="fab fa-spotify"></i></a></div>
-            </div>
-        </div>
-    </section> -->
 
 
-    
     <!--Footer begins here-->
     <footer id="footer"> <!--Footer Button-->
         <div class="container has-text-centered has-background-grey-darker" id="backtotop"> <a class="has-text-white"
