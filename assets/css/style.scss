@@ -60,6 +60,11 @@ a.navbar-item.is-active {
         opacity: 0.25;
         content: "";
     }
+   li {
+    list-style: none;
+    list-style-position: outside;
+   }
+
 }
 .title {
     margin: auto 0.75rem!important;
@@ -220,7 +225,7 @@ a.navbar-item.is-active {
             justify-content: center;
 
             li {
-                list-style: circle;
+                list-style: none;
                 list-style-position: outside;
             }
 
@@ -358,4 +363,6 @@ a.navbar-item.is-active {
         }
     }
 }
+
+
 
