@@ -1,200 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-30T12:06:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gentopia-AI</title><subtitle>The Collective Growth of Intelligent Agents</subtitle><entry><title type="html">Sample Post</title><link href="http://localhost:4000/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-04:00</published><updated>2020-04-24T00:00:00-04:00</updated><id>http://localhost:4000/blog/sample-post</id><content type="html" xml:base="http://localhost:4000/blog/sample-post"><![CDATA[<p>This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
-For more information about writing markdown you can checkout the following markdown cheatsheets:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-05T01:33:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gentopia-AI</title><subtitle>The Collective Growth of Intelligent Agents</subtitle><entry><title type="html">Motivation</title><link href="http://localhost:4000/blog/sample-post" rel="alternate" type="text/html" title="Motivation" /><published>2020-04-24T00:00:00+08:00</published><updated>2020-04-24T00:00:00+08:00</updated><id>http://localhost:4000/blog/sample-post</id><content type="html" xml:base="http://localhost:4000/blog/sample-post"><![CDATA[<p>Agent practitioners start to realize the difficulty in tuning a “well-rounded” agent with tons of tools or instructions in a single layer. Recent studies like TinyStories, Specializing Reasoning, Let’s Verify SbS, ReWOO, etc. also point us towards an intuitive yet undervalued direction 👉</p>
+
+<p><strong>An LLM is more capable if you create a context/distribution shift specialized to some target tasks.</strong></p>
+
+<p>Sadly, there is no silver bullet for agent specialization. For example, you can:</p>
 <ul>
-  <li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
-  <li><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Guide</a></li>
-  <li><a href="https://github.github.com/gfm/">GitHub Flavored Markdown Spec</a></li>
+  <li>Simply add Let’s think step by step. in your prompt for more accurate Math QA.</li>
+  <li>Give a few-shot exemplar in your prompt to guide a better reasoning trajectory for novel plotting.</li>
+  <li>Supervise fine-tuning (SFT) your 70B llama2 like this to match reasoning of 175B GPT-3.5.</li>
+  <li>Tune your agent paradigm like this demo to easily half the execution time for Seach &amp; Summarize.</li>
 </ul>
 
-<hr />
+<p>Isn’t it beautiful if one shares his effort in specialized intelligence, allowing others to reproduce, build on, or interact with it? 🤗 This belief inspires us to build Gentopia, designed for agent specialization, sharing, and interaction, to stackingly achieve collective growth towards greater intelligence..</p>]]></content><author><name></name></author><category term="motivation" /><summary type="html"><![CDATA[The motivation of Gentopia.]]></summary></entry><entry><title type="html">How to Install and use Gentopia?</title><link href="http://localhost:4000/blog/how-to-install-whatatheme" rel="alternate" type="text/html" title="How to Install and use Gentopia?" /><published>2020-04-22T00:00:00+08:00</published><updated>2020-04-22T00:00:00+08:00</updated><id>http://localhost:4000/blog/how-to-install-whatatheme</id><content type="html" xml:base="http://localhost:4000/blog/how-to-install-whatatheme"><![CDATA[<h1 id="installation">Installation</h1>
+<p>Please follow the instructions below to set up Gentopia and GentPool on your system.
+We recommend using a virtual environment.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">--name</span> gentenv <span class="nv">python</span><span class="o">=</span>3.10
+conda activate gentenv
+</code></pre></div></div>
 
-<h1 id="this-is-the-h1-text">This is the h1 text</h1>
-<h2 id="this-is-the-h2-text">This is the h2 text</h2>
-<h3 id="this-is-the-h3-text">This is the h3 text</h3>
-<h4 id="this-is-the-h4-text">This is the h4 text</h4>
-<h5 id="this-is-the-h5-text">This is the h5 text</h5>
-<h6 id="this-is-the-h6-text">This is the h6 text</h6>
+<h2 id="install-gentopia-from-pypi">Install Gentopia from PyPI</h2>
+<p>To install the basic framework,</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>gentopia
+</code></pre></div></div>
+<p>Additionally, if you want to use open LLMs like <code class="language-plaintext highlighter-rouge">llama</code> on huggingface, together with 8-bit/4-bit quantization tricks, install with</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>gentopia[huggingface]
+</code></pre></div></div>
+<p>NOTE:  We are still in early development (gentopia <code class="language-plaintext highlighter-rouge">v0.x.x</code> is considered early access), you may want to frequently</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">--upgrade</span> gentopia
+</code></pre></div></div>
 
-<p><strong>Bold Text in the post will look like:</strong><br />
-<strong>This text is Bold</strong></p>
+<h2 id="install-gentopia-from-source">Install Gentopia from source</h2>
+<p>Alternatively, if you are a true hacker who modifies the source code frequently, we recommend installing from source.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:Gentopia-AI/Gentopia.git
+<span class="nb">cd </span>Gentopia
+pip <span class="nb">install</span> <span class="nt">-e</span> <span class="nb">.</span>
+</code></pre></div></div>
 
-<p><strong>Italic Text in the post will look like:</strong><br />
-<em>This text is Italic</em></p>
+<h2 id="install-gentpool">Install GentPool</h2>
+<p>We recommend using GentPool as a space to build your agent because you can easily call other public agents for interaction, 
+and access our unique benchmark eval to test your agent.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:Gentopia-AI/GentPool.git
+</code></pre></div></div>
+<p>Create a .env file under GentPool (ignored by git) and put your API Keys inside. They will be registered as environmental variables at run time.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>GentPool
+<span class="nb">touch</span> .env
+<span class="nb">echo</span> <span class="s2">"OPENAI_API_KEY=&lt;your_openai_api_key&gt;"</span> <span class="o">&gt;&gt;</span> .env
+<span class="nb">echo</span> <span class="s2">"WOLFRAM_ALPHA_APPID=&lt;your_wolfram_alpha_api_key&gt;"</span> <span class="o">&gt;&gt;</span> .env
+</code></pre></div></div>
+<p>… and so on if you plan to use other service keys.</p>
 
-<blockquote>
-  <p>Quotes on your post will look like this</p>
-</blockquote>
+<h2 id="download-public-gentbench-data">Download public GentBench data</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Codes on your post will look like this</code></p>
+<p>GentBench is our unique benchmark eval for agents. It tests a wide range of agent capability beyond vanilla LLMs.
+See <a href="">here</a> for more details.</p>
 
-<p><strong>Link in the post will look like:</strong><br />
-<a href="#">This is a link</a></p>
+<p>GentBench is half-public and half-private (both will be updated and expanded). 
+You have full access to the public data for testing, fine-tuning or so, but private benchmark will only be used to evaluate agents registered in GentPool.
+This prevents overfitting and gives you a sense of generalizability.
+To download the public benchmark, make sure you’ve installed <a href="https://git-lfs.com/">Git-LFS</a> and GentPool, then</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>GentPool
+git lfs fetch <span class="nt">--all</span>
+git lfs pull
+</code></pre></div></div>
+<p>Then you will see downloaded tasks under <code class="language-plaintext highlighter-rouge">GentPool/benchmark/</code>.</p>]]></content><author><name></name></author><category term="how to" /><category term="setup" /><summary type="html"><![CDATA[This post will guide you to install Gentopia, follow the easy steps to set it up.]]></summary></entry><entry><title type="html">How to create agents?</title><link href="http://localhost:4000/blog/what-is-jekyll-how-to-use-it" rel="alternate" type="text/html" title="How to create agents?" /><published>2020-04-21T00:00:00+08:00</published><updated>2020-04-21T00:00:00+08:00</updated><id>http://localhost:4000/blog/what-is-jekyll-how-to-use-it</id><content type="html" xml:base="http://localhost:4000/blog/what-is-jekyll-how-to-use-it"><![CDATA[<h1 id="quick-start">Quick Start</h1>
+<p>The best way to get started with Gentopia is to go through our short demo <a href="https://www.youtube.com/playlist?list=PLZ2Bx-k4vH2dyvW9md5SHx4GBQOGoIJWr">tutorials</a>.</p>
 
-<p><strong>Bullet list in the post will look like:</strong></p>
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-  <li>Item 4</li>
-  <li>Item 5</li>
-</ul>
+<p>Grab one of the following agent template and store it in <code class="language-plaintext highlighter-rouge">agent.yaml</code>, then jump to <a href="quick_start.md#howto-assemble-your-agent">Assembling Agents</a> section. 
+See <a href="agent_components.md">Agent Components</a> for custom configurations.</p>
 
-<p><strong>Number list in the post will look like:</strong></p>
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-  <li>Item 4</li>
-  <li>Item 5</li>
-</ol>
+<h2 id="vanilla-agent">Vanilla Agent</h2>
+<p><code class="language-plaintext highlighter-rouge">vanilla</code> agents are plain LLMs instances without any plugin. 
+It is useful if you simply want to create context shift, such as granting identities or instructing an LLM to behave in a particular way.</p>
 
-<p><strong>Images in the post will look like:</strong><br />
-<img src="/WhatATheme/assets/images/1280x720%20Placeholder.png" alt="Test Image" /></p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Vanilla agent template</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">vanilla_template</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">vanilla</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">A plain gpt-4 LLM.</span>
+<span class="na">target_tasks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">anything to do with an LLM</span> 
+<span class="na">llm</span><span class="pi">:</span>
+  <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-4</span>
+  <span class="na">params</span><span class="pi">:</span>
+    <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+    <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+    <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+    <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+<span class="na">prompt_template</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">VanillaPrompt</span>
 
-<p><strong>Normal text in the post will look like</strong><br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.</p>
+</code></pre></div></div>
 
-<p>Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.</p>
+<h2 id="react-agent">ReAct Agent</h2>
+<p><code class="language-plaintext highlighter-rouge">react</code> agents are by far the most common type of agents. It prompts LLMs to respond in multiple “Thought -&gt; Action -&gt; Observation” cycles.
+A stop word “Observation: “ is used to detect plugin calls, and “Final Answer: “ is used to detect cycle end.
+It prompts LLM at each tool-call with all previous history stored in a “scratchpad”.</p>
 
-<p>Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ReAct Agent Template</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">react_template</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">react</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">A react agent capable of online web search and browsing.</span>
+<span class="na">target_tasks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">web search</span>
+  <span class="pi">-</span> <span class="s">web browsing</span>
+<span class="na">llm</span><span class="pi">:</span>
+  <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-4</span>
+  <span class="na">params</span><span class="pi">:</span>
+    <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+    <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+    <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+    <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+<span class="na">prompt_template</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">ZeroShotReactPrompt</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">google_search</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">web_page</span>
+</code></pre></div></div>
 
-<p>Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.</p>
+<h2 id="openai-function-agent">OpenAI Function Agent</h2>
+<p><code class="language-plaintext highlighter-rouge">openai</code> agents are powered by <a href="https://openai.com/blog/function-calling-and-other-api-updates">OpenAI function-call API</a>.
+It uses a similar sequential style as <code class="language-plaintext highlighter-rouge">react</code> agents, interleaving LLM response and tool-calls. 
+According to OpenAI, it is syntax fine-tuned to generate function call message.</p>
 
-<p><strong>Giphy Gifs will look like:</strong><br /></p>
-<iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
-<p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># OpenAI agent template</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">openai_template</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">openai</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">An openai agent capable of online web search and browsing.</span>
+<span class="na">target_tasks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">web search</span>
+  <span class="pi">-</span> <span class="s">web browsing</span>
+<span class="na">llm</span><span class="pi">:</span>
+  <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-4-0613</span>
+  <span class="na">params</span><span class="pi">:</span>
+    <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+    <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+    <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+    <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+<span class="na">prompt_template</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">VanillaPrompt</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">google_search</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">web_page</span>
+</code></pre></div></div>
 
-<p><strong>YouTUbe Videos will look like:</strong><br /></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jTPXwbDtIpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html"><![CDATA[A sample post to show how the content will look and how will different headlines, quotes and codes will be represented.]]></summary></entry><entry><title type="html">How to Install and use WhatATheme?</title><link href="http://localhost:4000/blog/how-to-install-whatatheme" rel="alternate" type="text/html" title="How to Install and use WhatATheme?" /><published>2020-04-22T00:00:00-04:00</published><updated>2020-04-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/how-to-install-whatatheme</id><content type="html" xml:base="http://localhost:4000/blog/how-to-install-whatatheme"><![CDATA[<h1 id="what-is-whatatheme">What is WhatATheme?</h1>
-<blockquote>
-  <p>You’ll find this post in your <strong><em>_posts</em></strong> directory. Go ahead and edit it and re-build the site to see your changes. &gt;You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-</blockquote>
+<h2 id="rewoo-agent">ReWOO Agent</h2>
+<p><code class="language-plaintext highlighter-rouge">rewoo</code> agents are designed to improve efficiency of sequential agent types by prompting LLM to plan ahead and use hypothetical
+tool responses to complete the reasoning process. Then the algorithm parses that “blueprint” into a Directed Acyclic Graph (DAG)
+and executes it in parallel with topological order.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VfPa2c9kwhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># ReWOO agent template</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">rewoo_template</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">rewoo</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">A rewoo agent capable of online web search and browsing.</span>
+<span class="na">target_tasks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">web search</span>
+  <span class="pi">-</span> <span class="s">web browsing</span>
+<span class="na">llm</span><span class="pi">:</span>
+  <span class="na">Planner</span><span class="pi">:</span>
+    <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-4</span>
+    <span class="na">params</span><span class="pi">:</span>
+      <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+      <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+      <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+      <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+  <span class="na">Solver</span><span class="pi">:</span>
+    <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-3.5-turbo</span>
+    <span class="na">params</span><span class="pi">:</span>
+      <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+      <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+      <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+      <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+<span class="na">prompt_template</span><span class="pi">:</span>
+  <span class="na">Planner</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">ZeroShotPlannerPrompt</span>
+  <span class="na">Solver</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">ZeroShotSolverPrompt</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">google_search</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">web_page</span>
+</code></pre></div></div>
 
-<hr />
+<h2 id="openai-function-agent-with-memory">OpenAI Function Agent (with Memory)</h2>
+<p><code class="language-plaintext highlighter-rouge">openai_memory</code> agents are specialized <code class="language-plaintext highlighter-rouge">openai</code> agents enabling memory retrieval from vector database.
+Abusing index retrieval is highly expensive and lagging, so we generally don’t encourage it unless you expect unavoidably long context. 
+After tons of tuning, we present this novel <a href="">2-level memory</a> architecture for fast and robust memmory retrieval.</p>
 
-<p><strong>WhatATheme</strong> is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio which includes</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># OpenAI agent template</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">openai_memory_template</span>
+<span class="na">version</span><span class="pi">:</span> <span class="s">0.0.1</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">openai_memory</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">An openai memory agent capable of online web search and browsing in unlimited context length.</span>
+<span class="na">target_tasks</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">web search</span>
+  <span class="pi">-</span> <span class="s">web browsing</span>
+<span class="na">llm</span><span class="pi">:</span>
+  <span class="na">model_name</span><span class="pi">:</span> <span class="s">gpt-4-0613</span>
+  <span class="na">params</span><span class="pi">:</span>
+    <span class="na">temperature</span><span class="pi">:</span> <span class="m">0.0</span>
+    <span class="na">top_p</span><span class="pi">:</span> <span class="m">0.9</span>
+    <span class="na">repetition_penalty</span><span class="pi">:</span> <span class="m">1.0</span>
+    <span class="na">max_tokens</span><span class="pi">:</span> <span class="m">1024</span>
+<span class="na">prompt_template</span><span class="pi">:</span> <span class="kt">!prompt</span> <span class="s">VanillaPrompt</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">google_search</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">web_page</span>
+<span class="na">memory</span><span class="pi">:</span>
+  <span class="na">memory_type</span><span class="pi">:</span> <span class="s">chroma</span>
+  <span class="na">conversation_threshold</span><span class="pi">:</span> <span class="m">2</span>      <span class="c1"># first-level memory</span>
+  <span class="na">reasoning_threshold</span><span class="pi">:</span> <span class="m">2</span>         <span class="c1"># second-level memory</span>
+  <span class="na">params</span><span class="pi">:</span>
+    <span class="na">index</span><span class="pi">:</span> <span class="s">main</span>
+    <span class="na">top_k</span><span class="pi">:</span> <span class="m">2</span>
+</code></pre></div></div>
 
-<h3 id="home-page--">Home Page -</h3>
-<ul>
-  <li>A Hero section - A section where you can outsource an image which will work as the background for the particular section; it also will include your name and a tagline which can be easily manipulated via the _config.yml file.</li>
-  <li>An About section - A section where you can include your image and a 60 word paragraph which again you can easily manipulate using the _config.yml file.</li>
-  <li>A Contact section - A section where you can include 3 direct ways to contact<br />
-<code class="language-plaintext highlighter-rouge">Ping on Messenger</code><br />
-<code class="language-plaintext highlighter-rouge">Send an Email</code><br />
-<code class="language-plaintext highlighter-rouge">Tweet on Twitter</code><br />
-The contact section will also include 10 different social media buttons for your audience to follow.<br />
-<code class="language-plaintext highlighter-rouge">Facebook</code>, <code class="language-plaintext highlighter-rouge">Twitter</code>, <code class="language-plaintext highlighter-rouge">Instagram</code>, <code class="language-plaintext highlighter-rouge">LinkedIn</code>, <code class="language-plaintext highlighter-rouge">GitHub</code>, <code class="language-plaintext highlighter-rouge">YouTube</code>, <code class="language-plaintext highlighter-rouge">Reddit</code>, <code class="language-plaintext highlighter-rouge">Behance</code>, <code class="language-plaintext highlighter-rouge">Dribbble</code> &amp; <code class="language-plaintext highlighter-rouge">Spotify</code>.</li>
-</ul>
+<h2 id="howto-assemble-your-agent">Howto: Assemble your Agent</h2>
+<p>While it’s recommended to use Gentopia in <a href="gentpool.md">GentPool</a>, you may follow instructions below to run in your own python environment:</p>
 
-<h3 id="blog--">Blog -</h3>
-<p>The blog includes a horizontal card list where the latest articles are fetched from the _posts folder automatically in top-down format. It also includes an instant search box which matches your query from the title, description &amp; content of your post and shows the result as soon as you type.<br />
-The blog card includes</p>
-<ul>
-  <li>Post Title</li>
-  <li>300 words from the content of the post</li>
-  <li>The publish date</li>
-  <li>The time which will be required to read the post.</li>
-</ul>
+<p>Suppose you have saved your agent config to <code class="language-plaintext highlighter-rouge">my_agent.yaml</code>, make sure you have set up <code class="language-plaintext highlighter-rouge">.env</code> environmental keys similar to <a href="installation.md#install-gentpool">here</a>. Then to chat with your agent in our built-in streaming CLI, run:</p>
 
-<h3 id="projects--">Projects -</h3>
-<p>The Projects page will include all the projects from the <strong><code class="language-plaintext highlighter-rouge">projects.yml</code></strong> file which is present in the _data folder.<br />
-Projects will be showcased in a card-list format where each card will contain</p>
-<ul>
-  <li>An image related to the project</li>
-  <li>A Project Title</li>
-  <li>A Project Description of about 80 words</li>
-</ul>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">dotenv</span>
+<span class="kn">from</span> <span class="nn">gentopia</span> <span class="kn">import</span> <span class="n">chat</span>
+<span class="kn">from</span> <span class="nn">gentopia.assembler.agent_assembler</span> <span class="kn">import</span> <span class="n">AgentAssembler</span>
 
-<h3 id="footer--">Footer -</h3>
-<p>The footer includes</p>
-<ul>
-  <li>A small about the author widget which show the same <code class="language-plaintext highlighter-rouge">Author Image</code> as mentioned in the about section of the Home page which includes <code class="language-plaintext highlighter-rouge">Name of the Author</code>, <code class="language-plaintext highlighter-rouge">Around 75 words about the author</code>.</li>
-  <li>A more link widget which includes a link to any extra page that you’ve created and a <code class="language-plaintext highlighter-rouge">Subscribe via RSS</code> link.</li>
-  <li>A Recent posts widget which will include latest 3 posts.</li>
-</ul>
+<span class="n">dotenv</span><span class="p">.</span><span class="n">load_dotenv</span><span class="p">(</span><span class="s">".env"</span><span class="p">)</span>  <span class="c1"># load environmental keys
+</span><span class="n">agent</span> <span class="o">=</span> <span class="n">AgentAssembler</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="s">'my_agent.yaml'</span><span class="p">).</span><span class="n">get_agent</span><span class="p">()</span>
 
-<h4 id="extra-features--">Extra Features -</h4>
-<p>WhatATheme comes pre installed with</p>
-<ul>
-  <li><strong>HTML Compressor</strong> - It’ll compress all the pages by removing any extra space or blank lines.</li>
-  <li><strong>Google Analytics</strong> - A web analytics service offered by Google that tracks and reports website traffic. For more information <a href="https://analytics.google.com" target="blank">click here</a>.</li>
-  <li>
-    <p><strong>Disqus</strong> - A worldwide blog comment hosting service for web sites and online communities that use a networked platform. For more information about Disqus <a href="https://help.disqus.com/en/articles/1717053-what-is-disqus" target="blank">click here</a></p>
-
-    <p>##### For more information about WhatATheme <a href="https://github.com/thedevslot/WhatATheme/blob/gh-pages/README.md" target="blank">click here</a>.</p>
-  </li>
-</ul>
-
-<hr />
-
-<h1 id="installation">Installation</h1>
-<h3 id="step-1---setting-up-whatatheme">Step 1 - Setting up WhatATheme</h3>
-<blockquote>
-  <ul>
-    <li>Fork the <a href="https://github.com/thedevslot/WhatATheme/tree/master" target="blankl">repository</a></li>
-    <li>Go to repository settings and set Github Pages source as master.</li>
-    <li>Your new site should be ready at <a href="#" target="blank">https://username.github.io/WhatATheme/</a></li>
-  </ul>
-</blockquote>
-
-<h3 id="step-2---making-changes-via-_configyml">Step 2 - Making changes via <strong>_config.yml</strong></h3>
-<blockquote>
-  <ul>
-    <li>Open _config.yml file</li>
-    <li>Fill the available details accordingly</li>
-    <li>Commit the changes</li>
-  </ul>
-</blockquote>]]></content><author><name></name></author><category term="how to" /><category term="setup" /><category term="theme" /><summary type="html"><![CDATA[This post will guide you to install WhatATheme on your Jekyll site, follow the easy steps to set up WhatATheme.]]></summary></entry><entry><title type="html">What is Jekyll? How to use it?</title><link href="http://localhost:4000/blog/what-is-jekyll-how-to-use-it" rel="alternate" type="text/html" title="What is Jekyll? How to use it?" /><published>2020-04-21T00:00:00-04:00</published><updated>2020-04-21T00:00:00-04:00</updated><id>http://localhost:4000/blog/what-is-jekyll-how-to-use-it</id><content type="html" xml:base="http://localhost:4000/blog/what-is-jekyll-how-to-use-it"><![CDATA[<p>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories and if you don’t know what GitHub Pages are you can visit on click <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages" target="blank">here</a> or <a href="https://pages.github.com/" target="blank">here</a></p>
-<h6 id="source--jekyll-docs">Source : <a href="https://jekyllrb.com/docs/"><code class="language-plaintext highlighter-rouge">Jekyll Docs</code></a></h6>
-
-<blockquote>
-  <h3 id="to-know-more-and-get-started-with-jekyll-you-can-click-here">To know more and get started with Jekyll you can click <a href="https://jekyllrb.com/" targe="_blank">here</a></h3>
-</blockquote>
-
-<h1 id="installation">Installation</h1>
-<p><strong>Jekyll is a Ruby Gem that can be installed on most systems.</strong></p>
-<h3 id="requirements">Requirements</h3>
-<ul>
-  <li><a href="https://www.ruby-lang.org/en/downloads/" target="_blank">Ruby</a> version 2.5.0 or above, including all development headers (ruby version can be checked by running ruby -v)</li>
-  <li><a href="https://rubygems.org/pages/download" target="_blank">Ruby Gems</a> (which you can check by running gem -v)</li>
-  <li><a href="https://gcc.gnu.org/install/" target="_blank">GCC</a> and <a href="https://www.gnu.org/software/make/" target="_blank">Make</a></li>
-</ul>
-
-<h3 id="after-installing-the-requirements-you-can-follow-these-guides">After Installing the Requirements you can follow these guides:</h3>
-<p><strong>For detailed install instructions have a look at the guide for your operating system.</strong></p>
-<ul>
-  <li><a href="https://jekyllrb.com/docs/installation/macos/" target="_blank">macOS</a></li>
-  <li><a href="https://jekyllrb.com/docs/installation/ubuntu/" target="_blank">Ubuntu</a></li>
-  <li><a href="https://jekyllrb.com/docs/installation/other-linux/" target="_blank">Other Linux Distros</a></li>
-  <li><a href="https://jekyllrb.com/docs/installation/windows/" target="_blank">Windows</a></li>
-</ul>
-
-<h3 id="creating-a-new-jekyll-site">Creating a new Jekyll site</h3>
-<p><strong>We can create a new Jekyll site just by a simple command:</strong><br /></p>
-<blockquote>
-  <h1 id="jekyll-new-my-site"><code class="language-plaintext highlighter-rouge">jekyll new my-site</code></h1>
-</blockquote>
-
-<p>Jekyll will create a new directory named as <code class="language-plaintext highlighter-rouge">my-site</code> which is customizable (i.e., you can change the name from <code class="language-plaintext highlighter-rouge">my-site</code> to anything you want for example <code class="language-plaintext highlighter-rouge">jekyll new brutus</code>).</p>
-
-<h3 id="changing-into-the-directory">Changing into the Directory</h3>
-<p><strong>We have to go inside the directory:</strong><br /></p>
-<blockquote>
-  <h1 id="cd-my-site"><code class="language-plaintext highlighter-rouge">cd my-site</code></h1>
-</blockquote>
-
-<p>Again, <code class="language-plaintext highlighter-rouge">my-site</code> is just a random name which is customizable.</p>
-
-<h3 id="building-the-site-and-making-it-available-on-a-local-server">Building the site and making it available on a local server</h3>
-<blockquote>
-  <h1 id="bundle-exec-jekyll-serve"><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></h1>
-</blockquote>
-
-<h3 id="browsing-your-jekyll-site">Browsing your Jekyll site</h3>
-<blockquote>
-  <h1 id="browse-to-httplocalhost4000">Browse to <a href="http://localhost:4000/" target="_blank"><code class="language-plaintext highlighter-rouge">http://localhost:4000/</code></a></h1>
-</blockquote>
-
-<h6 id="on-encountering-any-problem-while-building-and-serving-your-jekyll-site-you-can-consider-visiting-to-the-troubleshooting-page">On encountering any problem while building and serving your Jekyll site you can consider visiting to the <a href="https://jekyllrb.com/docs/troubleshooting/#configuration-problems" target="_blank">troubleshooting</a> page</h6>]]></content><author><name></name></author><category term="jekyll" /><category term="informative" /><category term="technology" /><summary type="html"><![CDATA[Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website.]]></summary></entry></feed>
+<span class="n">chat</span><span class="p">(</span><span class="n">agent</span><span class="p">)</span> 
+</code></pre></div></div>
+<p>To run that agent in your own app</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># AgentOutput contains response content, running cost and token usgae.
+</span><span class="n">agent</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="s">"Your instruction or message."</span><span class="p">)</span>
+</code></pre></div></div>
+<p>To stream output in your app, inherit <a href="https://github.com/Gentopia-AI/Gentopia/blob/c26370cf8c9642d2ec101c2d827b56341058b482/gentopia/output/base_output.py#L12">BaseOutput</a>
+with your own output handler</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">oh</span> <span class="o">=</span> <span class="n">Your_OutputHandler</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">oh</span><span class="p">,</span> <span class="n">BaseOutput</span><span class="p">)</span>
+<span class="c1"># Response content streams into your output handler.
+</span><span class="n">agent</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">"Your instruction or message."</span><span class="p">,</span> <span class="n">output_handler</span><span class="o">=</span><span class="n">oh</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="create" /><category term="agent" /><summary type="html"><![CDATA[The quick start on how to create your own agent.]]></summary></entry></feed>

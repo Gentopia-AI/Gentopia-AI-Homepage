@@ -45,6 +45,7 @@
 
 
 
+
     </script>
     <title>Gentopia.AI</title>
     <link rel="stylesheet" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/css/style.css">
@@ -85,6 +86,7 @@
 </nav><!-- Bulma Navbar JS -->
 <script>
      document.addEventListener('DOMContentLoaded', function () { /* Get all "navbar-burger" elements */ var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); /* Check if there are any navbar burgers */ if ($navbarBurgers.length > 0) { /* Add a click event on each of them */ $navbarBurgers.forEach(function ($el) { $el.addEventListener('click', function () { /* Get the target from the "data-target" attribute */ var target = $el.dataset.target; var $target = document.getElementById(target); /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */ $el.classList.toggle('is-active'); $target.classList.toggle('is-active'); }); }); } });
+
 
 
 
@@ -329,9 +331,9 @@
                 <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
                      id="project-card">
                     <a href="https://yuchen-sh.github.io/#yliu"><img class="avatar avatar-circle"
-                                                             src="assets/images/Yuchen.png" height="200"
-                                                             width="190"
-                                                             alt="Avatar"></a>
+                                                                     src="assets/images/Yuchen.png" height="200"
+                                                                     width="190"
+                                                                     alt="Avatar"></a>
                     <h2><a href="https://yuchen-sh.github.io/#yliu">Yuchen Liu</a></h2>
                     <h3 style="font-size:12px;">Assistant Professor</h3>
                     <h3 style="font-size:12px;">North Carolina State University</h3>
@@ -453,13 +455,9 @@
             </div><!--Blog-post Section-->
             <div class="column has-text-white">
                 <h3>Recent Posts</h3>
-                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/sample-post">Sample Post</a></li>
-                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/how-to-install-whatatheme">How to
-                    Install and use
-                    WhatATheme?</a></li>
-                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/what-is-jekyll-how-to-use-it">What
-                    is Jekyll? How to use
-                    it?</a></li>
+                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/sample-post">Motivation</a></li>
+                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/how-to-install-whatatheme">How to Install?</a></li>
+                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/what-is-jekyll-how-to-use-it">How to create agents?</a></li>
             </div>
         </div>
     </div>
@@ -474,14 +472,6 @@
 </body>
 <script>
      var navItems = document.getElementsByClassName('navbar-item'); var heroes = document.getElementsByClassName('hero'); const viewOffset = 200; window.addEventListener("scroll", function (event) { var scroll = this.scrollY; var position = window.pageYOffset; for (var i = 0; i < navItems.length; i++) { navItems[i].classList.remove('is-active'); } for (var i = 0; i < heroes.length; i++) { var sectionTop = heroes[i].offsetTop - viewOffset; var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight - viewOffset; if (scroll >= sectionTop && scroll < sectionBottom) { navItems[i + 1].classList.add('is-active'); } } });
-
-
-
-
-
-
-
-
 
 
 

@@ -8,7 +8,6 @@ tags:
 - motivation
 ---
 
-## Motivation
 Agent practitioners start to realize the difficulty in tuning a "well-rounded" agent with tons of tools or instructions in a single layer. Recent studies like TinyStories, Specializing Reasoning, Let's Verify SbS, ReWOO, etc. also point us towards an intuitive yet undervalued direction 👉
 
 **An LLM is more capable if you create a context/distribution shift specialized to some target tasks.**

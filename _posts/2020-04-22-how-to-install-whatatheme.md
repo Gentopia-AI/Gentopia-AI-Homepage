@@ -1,72 +1,70 @@
 ---
-title: How to Install and use WhatATheme?
+title: How to Install and use Gentopia?
 layout: post
 post-image: https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/How%20to%20install%20and%20use%20WhatATheme.png?token=AHMQUEPHRKQFL5FS624RDJ26Z64HK
-description: This post will guide you to install WhatATheme on your Jekyll site, follow
-  the easy steps to set up WhatATheme.
+description: This post will guide you to install Gentopia, follow the easy steps to set it up.
 tags:
 - how to
 - setup
-- theme
----
-
-# What is WhatATheme?
->You’ll find this post in your ***_posts*** directory. Go ahead and edit it and re-build the site to see your changes. >You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VfPa2c9kwhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
-**WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio which includes
-
-### Home Page -
-* A Hero section - A section where you can outsource an image which will work as the background for the particular section; it also will include your name and a tagline which can be easily manipulated via the _config.yml file.
-* An About section - A section where you can include your image and a 60 word paragraph which again you can easily manipulate using the _config.yml file.
-* A Contact section - A section where you can include 3 direct ways to contact<br>
-`Ping on Messenger`<br>
-`Send an Email`<br>
-`Tweet on Twitter`<br>
-The contact section will also include 10 different social media buttons for your audience to follow.<br>
-`Facebook`, `Twitter`, `Instagram`, `LinkedIn`, `GitHub`, `YouTube`, `Reddit`, `Behance`, `Dribbble` & `Spotify`.
-
-### Blog -
-The blog includes a horizontal card list where the latest articles are fetched from the _posts folder automatically in top-down format. It also includes an instant search box which matches your query from the title, description & content of your post and shows the result as soon as you type.<br>
-The blog card includes
-* Post Title
-* 300 words from the content of the post
-* The publish date
-* The time which will be required to read the post.
-
-### Projects -
-The Projects page will include all the projects from the **`projects.yml`** file which is present in the _data folder.<br>
-Projects will be showcased in a card-list format where each card will contain
-* An image related to the project
-* A Project Title
-* A Project Description of about 80 words
-
-### Footer -
-The footer includes
-* A small about the author widget which show the same `Author Image` as mentioned in the about section of the Home page which includes `Name of the Author`, `Around 75 words about the author`.
-* A more link widget which includes a link to any extra page that you've created and a `Subscribe via RSS` link.
-* A Recent posts widget which will include latest 3 posts.
-
-#### Extra Features -
-WhatATheme comes pre installed with
-* **HTML Compressor** - It'll compress all the pages by removing any extra space or blank lines.
-* **Google Analytics** - A web analytics service offered by Google that tracks and reports website traffic. For more information [click here](https://analytics.google.com){:target="blank"}.
-* **Disqus** - A worldwide blog comment hosting service for web sites and online communities that use a networked platform. For more information about Disqus [click here](https://help.disqus.com/en/articles/1717053-what-is-disqus){:target="blank"}
-
-	##### For more information about WhatATheme [click here](https://github.com/thedevslot/WhatATheme/blob/gh-pages/README.md){:target="blank"}.
-
 ---
 
 # Installation
-### Step 1 - Setting up WhatATheme
-> * Fork the [repository](https://github.com/thedevslot/WhatATheme/tree/master){:target="blankl"}
-> * Go to repository settings and set Github Pages source as master.
-> * Your new site should be ready at [https://username.github.io/WhatATheme/](#){:target="blank"}
+Please follow the instructions below to set up Gentopia and GentPool on your system.
+We recommend using a virtual environment.
+```bash
+conda create --name gentenv python=3.10
+conda activate gentenv
+```
 
-### Step 2 - Making changes via **_config.yml**
-> * Open _config.yml file
-> * Fill the available details accordingly
-> * Commit the changes
+## Install Gentopia from PyPI
+To install the basic framework, 
+```bash
+pip install gentopia
+```
+Additionally, if you want to use open LLMs like `llama` on huggingface, together with 8-bit/4-bit quantization tricks, install with 
+```bash
+pip install gentopia[huggingface]
+```
+NOTE:  We are still in early development (gentopia `v0.x.x` is considered early access), you may want to frequently 
+```bash
+pip install --upgrade gentopia
+```
+
+## Install Gentopia from source
+Alternatively, if you are a true hacker who modifies the source code frequently, we recommend installing from source.
+```bash
+git clone git@github.com:Gentopia-AI/Gentopia.git
+cd Gentopia
+pip install -e .
+```
+
+## Install GentPool
+We recommend using GentPool as a space to build your agent because you can easily call other public agents for interaction, 
+and access our unique benchmark eval to test your agent.
+```bash
+git clone git@github.com:Gentopia-AI/GentPool.git
+```
+Create a .env file under GentPool (ignored by git) and put your API Keys inside. They will be registered as environmental variables at run time.
+```bash
+cd GentPool
+touch .env
+echo "OPENAI_API_KEY=<your_openai_api_key>" >> .env
+echo "WOLFRAM_ALPHA_APPID=<your_wolfram_alpha_api_key>" >> .env
+```
+... and so on if you plan to use other service keys.
+
+## Download public GentBench data
+
+GentBench is our unique benchmark eval for agents. It tests a wide range of agent capability beyond vanilla LLMs.
+See [here]() for more details.
+
+GentBench is half-public and half-private (both will be updated and expanded). 
+You have full access to the public data for testing, fine-tuning or so, but private benchmark will only be used to evaluate agents registered in GentPool.
+This prevents overfitting and gives you a sense of generalizability.
+To download the public benchmark, make sure you've installed [Git-LFS](https://git-lfs.com/) and GentPool, then
+```bash
+cd GentPool
+git lfs fetch --all
+git lfs pull
+```
+Then you will see downloaded tasks under `GentPool/benchmark/`.
