@@ -2,7 +2,7 @@
 title: How to create agents?
 layout: post
 
-[//]: # (post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/What%20is%20Jekyll%20and%20How%20to%20use%20it.png?token=AHMQUELVG36IDSA4SZEZ5P26Z64IW")
+post-image: "https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/agents.png"
 description: The quick start on how to create your own agent.
 tags:
 - create

@@ -2,7 +2,7 @@
 title: Motivation
 layout: post
 
-[//]: # (post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG")
+post-image: "https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/motivation.png"
 description: The motivation of Gentopia.
 tags:
 - motivation
