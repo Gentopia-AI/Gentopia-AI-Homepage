@@ -1,7 +1,7 @@
 ---
 title: How to Install and use Gentopia?
 layout: post
-post-image: https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/install.png
+post-image: https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/images/Install.png
 description: This post will guide you to install Gentopia, follow the easy steps to set it up.
 tags:
 - how to
