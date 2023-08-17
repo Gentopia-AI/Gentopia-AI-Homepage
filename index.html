@@ -51,6 +51,11 @@
 
 
 
+
+
+
+
+
     </script>
     <title>Gentopia.AI</title>
     <link rel="stylesheet" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/css/style.css">
@@ -92,6 +97,11 @@
 </nav><!-- Bulma Navbar JS -->
 <script>
      document.addEventListener('DOMContentLoaded', function () { /* Get all "navbar-burger" elements */ var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); /* Check if there are any navbar burgers */ if ($navbarBurgers.length > 0) { /* Add a click event on each of them */ $navbarBurgers.forEach(function ($el) { $el.addEventListener('click', function () { /* Get the target from the "data-target" attribute */ var target = $el.dataset.target; var $target = document.getElementById(target); /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */ $el.classList.toggle('is-active'); $target.classList.toggle('is-active'); }); }); } });
+
+
+
+
+
 
 
 
@@ -308,11 +318,16 @@
                     <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">About</p>
                 </div>
                 <div class="text-left">
-                    <p>We aim to make large models accessible to everyone by co-development of open models, datasets,
-                        systems, and evaluation tools. Our work encompasses research in both machine learning and
-                        systems.
-                        We train large language models and make them widely available, while also developing distributed
-                        systems to accelerate their training and inference.</p>
+                    <p>Our team constitutes an open research organization established by a collective of esteemed
+                        researchers and engineers hailing from renowned institutions such as NC State, UMich/PennState,
+                        George Mason, and CMU, etc. We invite you to stay informed and consider engaging with our endeavors!
+                        <br>
+                        Gentopia.AI is an open-source platform for creating, evaluating, and community-sharing Augmented
+                        Language Model (ALM)-based Agents! It is a lightweight and extensible framework for LLM-driven
+                        Agents and ALM research. It provides essential components to build, test and evaluate agents. At
+                        its core, Gentopia aims to assemble an agent with a single config, thus minimizing your effort
+                        in building, tuning, and sharing agents.
+                    </p>
                 </div>
             </div>
             <div class="section">
@@ -515,6 +530,11 @@
 </body>
 <script>
      var navItems = document.getElementsByClassName('navbar-item'); var heroes = document.getElementsByClassName('hero'); const viewOffset = 200; window.addEventListener("scroll", function (event) { var scroll = this.scrollY; var position = window.pageYOffset; for (var i = 0; i < navItems.length; i++) { navItems[i].classList.remove('is-active'); } for (var i = 0; i < heroes.length; i++) { var sectionTop = heroes[i].offsetTop - viewOffset; var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight - viewOffset; if (scroll >= sectionTop && scroll < sectionBottom) { navItems[i + 1].classList.add('is-active'); } } });
+
+
+
+
+
 
 
 
