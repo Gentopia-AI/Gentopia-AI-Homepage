@@ -216,6 +216,7 @@ a.navbar-item.is-active {
     }
 
     .container {
+        width:auto;
         margin: auto;
         padding: 1.5rem;
         line-height: 1.25;
@@ -369,5 +370,12 @@ a.navbar-item.is-active {
 .text-left {
     text-align: left;
 }
-
+.no-padding-margin {
+padding: 0 !important;
+margin: 0 !important;
+}
+.full-width {
+max-width: 100% !important;
+width: auto !important;
+}
 
