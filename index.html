@@ -58,6 +58,7 @@
 
 
 
+
     </script>
     <title>Gentopia.AI</title>
     <link rel="stylesheet" href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/assets/css/style.css">
@@ -99,6 +100,7 @@
 </nav><!-- Bulma Navbar JS -->
 <script>
      document.addEventListener('DOMContentLoaded', function () { /* Get all "navbar-burger" elements */ var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); /* Check if there are any navbar burgers */ if ($navbarBurgers.length > 0) { /* Add a click event on each of them */ $navbarBurgers.forEach(function ($el) { $el.addEventListener('click', function () { /* Get the target from the "data-target" attribute */ var target = $el.dataset.target; var $target = document.getElementById(target); /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */ $el.classList.toggle('is-active'); $target.classList.toggle('is-active'); }); }); } });
+
 
 
 
@@ -322,11 +324,15 @@
                         George Mason, and CMU, etc. We invite you to stay informed and consider engaging with our
                         endeavors!
                         <br>
-                        Gentopia.AI is an open-source platform for creating, evaluating, and community-sharing Augmented
-                        Language Model (ALM)-based Agents! It is a lightweight and extensible framework for LLM-driven
-                        Agents and ALM research. It provides essential components to build, test and evaluate agents. At
-                        its core, Gentopia aims to assemble an agent with a single config, thus minimizing your effort
-                        in building, tuning, and sharing agents.
+                        We aim to establish Gentopia.AI as a pioneering open-source platform dedicated to the seamless
+                        creation, assessment, and collaborative sharing of Augmented Language Model (ALM)-based Agents.
+                        Through this lightweight and versatile framework, we strive to streamline the process of
+                        developing LLM-driven Agents and advancing ALM research. Our primary objective is to furnish
+                        essential components that facilitate the construction, experimentation, and evaluation of
+                        agents. At the heart of our mission lies the aspiration to simplify agent creation by
+                        consolidating various functionalities into a single configuration, thereby significantly
+                        reducing the time and energy required for agent building, fine-tuning, and widespread
+                        dissemination.
                     </p>
                 </div>
             </div>
@@ -489,22 +495,22 @@
         TO TOP</a></div><!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns"> <!--Name Section-->
-<!--            <div class="column has-text-left-desktop has-text-centered-mobile"><a-->
-<!--                    href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#about">-->
-<!--                <div class="columns">-->
-<!--                    <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">-->
-<!--                        <figure class="image is-64x64"><img class="is-rounded"-->
-<!--                                                            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <div class="column is-marginless">-->
-<!--                        <h5 class="has-text-grey-lighter">Teams</h5>-->
-<!--                        <div class="content has-text-grey">-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ege...</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </a></div>&lt;!&ndash;Link Section&ndash;&gt;-->
+            <!--            <div class="column has-text-left-desktop has-text-centered-mobile"><a-->
+            <!--                    href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/#about">-->
+            <!--                <div class="columns">-->
+            <!--                    <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">-->
+            <!--                        <figure class="image is-64x64"><img class="is-rounded"-->
+            <!--                                                            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">-->
+            <!--                        </figure>-->
+            <!--                    </div>-->
+            <!--                    <div class="column is-marginless">-->
+            <!--                        <h5 class="has-text-grey-lighter">Teams</h5>-->
+            <!--                        <div class="content has-text-grey">-->
+            <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ege...</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </a></div>&lt;!&ndash;Link Section&ndash;&gt;-->
             <div class="column has-text-white">
                 <h3>More Links</h3>
                 <li><a href="http://149.28.235.182:8000/#">Test Page</a></li>
@@ -513,8 +519,10 @@
             <div class="column has-text-white">
                 <h3>Recent Posts</h3>
                 <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/sample-post">Motivation</a></li>
-                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/how-to-install-whatatheme">How to Install?</a></li>
-                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/what-is-jekyll-how-to-use-it">How to create agents?</a></li>
+                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/how-to-install-whatatheme">How to
+                    Install?</a></li>
+                <li><a href="https://gentopia-ai.github.io/Gentopia-AI-Homepage/blog/what-is-jekyll-how-to-use-it">How
+                    to create agents?</a></li>
             </div>
         </div>
     </div>
@@ -522,6 +530,7 @@
 </body>
 <script>
      var navItems = document.getElementsByClassName('navbar-item'); var heroes = document.getElementsByClassName('hero'); const viewOffset = 200; window.addEventListener("scroll", function (event) { var scroll = this.scrollY; var position = window.pageYOffset; for (var i = 0; i < navItems.length; i++) { navItems[i].classList.remove('is-active'); } for (var i = 0; i < heroes.length; i++) { var sectionTop = heroes[i].offsetTop - viewOffset; var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight - viewOffset; if (scroll >= sectionTop && scroll < sectionBottom) { navItems[i + 1].classList.add('is-active'); } } });
+
 
 
 
